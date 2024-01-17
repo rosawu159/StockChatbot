@@ -96,7 +96,7 @@ uploaded_file = st.file_uploader("Upload File", type="pdf")
 user_question = st.text_input("Enter your question:")
 submit_button = st.button('Submit')
 
-if submit_button:
+if submit_button and user_question:
     print(uploaded_file.name)
     content = load_data(uploaded_file)
     chunks = split_into_many(content)
@@ -109,23 +109,22 @@ if submit_button:
         'chunk': chunks,
         'embeddings': embeddings
     })
-    if user_question:
-        docs = search_similar(df, user_question)
-        context = ''
-        for chunk in docs["chunk"]:
-            context += chunk + "\n"
-        prompt= f'''
-            Answer the question based on the context below,
-            and if the question can't be answered based on the context, say "I don't know"
+    docs = search_similar(df, user_question)
+    context = ''
+    for chunk in docs["chunk"]:
+        context += chunk + "\n"
+    prompt= f'''
+        Answer the question based on the context below,
+        and if the question can't be answered based on the context, say "I don't know"
 
-            Context: {context}
+        Context: {context}
 
-            ---
+        ---
 
-            Question: {user_question}
-            Answer:'''
-        result = get_completion([ {"role": "user", "content": prompt }], model="gpt-3.5-turbo")
-        st.write("Answer:", result)
+        Question: {user_question}
+        Answer:'''
+    result = get_completion([ {"role": "user", "content": prompt }], model="gpt-3.5-turbo")
+    st.write("Answer:", result)
 
 
 
