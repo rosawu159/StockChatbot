@@ -3,7 +3,6 @@ import json
 import requests
 import re
 from pprint import pp
-import fitz
 import pandas as pd
 import numpy as np
 import tiktoken
