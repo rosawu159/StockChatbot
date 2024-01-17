@@ -1,5 +1,5 @@
 # Stock chatbot
-![image](images/screenshot.png)
+![image](images/example.png)
 
 ## 參考：可以丟給bot的問題
 - 什麼是權值股？
