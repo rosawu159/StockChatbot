@@ -138,7 +138,7 @@ pycparser==2.21
 pycryptodome==3.19.0
 pydantic==2.3.0
 pydantic-settings==2.1.0
-pydantic_core==2.14.5
+pydantic_core==2.6.3
 pydeck==0.8.1b0
 pyee==8.2.2
 Pygments==2.16.1
