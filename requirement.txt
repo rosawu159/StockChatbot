@@ -1,7 +1,7 @@
 PyMuPDF
-tiktoken==0.5.2
 pandas
 setuptools_rust
 libxml2
 libxslt
 rust
+tiktoken
