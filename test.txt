@@ -1,8 +1,0 @@
-PyMuPDF
-pandas
-setuptools_rust
-libxml2
-libxslt
-rust
-streamlit
-tiktoken
