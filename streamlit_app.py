@@ -90,7 +90,7 @@ def split_into_many(text, max_tokens = 500):
     
 
 # Set the title for the Streamlit app
-st.title("Stock chatbot")
+st.title("🏦 Stock chatbot")
 API_KEY = st.text_input("Enter your API key", type="password")
 uploaded_file = st.file_uploader("Upload File", type="pdf")
 user_question = st.text_input("Enter your question:")
