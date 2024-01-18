@@ -5,7 +5,7 @@ Demo: https://stockchatbot-9qiq42d9phesptr8kjrdxz.streamlit.app/
 
 ## 預先準備：
 1. OpenAI API key
-2. Download[stocks.pdf](https://www.btcc.com/zh-TW/academy/doc/tw-getting-started-with-stocks.pdf)
+2. Download [stocks.pdf](https://www.btcc.com/zh-TW/academy/doc/tw-getting-started-with-stocks.pdf)
  
 ## 操作：
 1. Enter your API key.
